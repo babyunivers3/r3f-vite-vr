@@ -19,11 +19,11 @@ const BabyCanvas = () => {
     return (
         <>
   <VRButton />
-      <Canvas className="cursor-pointer" camera={{ position: [5, 5, 5], fov: 90, near: 0.1, far: 200 }}>
+      <Canvas style={{width: '100vw', height: '100vh' }} className="cursor-pointer" camera={{ position: [5, 5, 5], fov: 90, near: 0.1, far: 200 }}>
       <XR mode="VR" />
       <primitive object={baby.scene} scale={10} />
         <ambientLight intensity={2} />
-        <directionalLight position={[0, 0, 5]} color="white" castShadow />
+        <directionalLight position={[5, 5, 5]} color="white" castShadow />
         <OrbitControls autoRotate={false} enableZoom={true} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enablePan={false} />
       </Canvas>
 
