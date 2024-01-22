@@ -1,24 +1,15 @@
 // App.js
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import ChatButton from './components/ChatButton';
-import CreateButton from './components/CreateButton';
+import BabyCanvas from './components/baby';
 
 const App = () => {
-  const handleButtonClick = () => {
-    console.log('Button clicked!');
-  };
-
-  return (
-    <Canvas>
-      {/* Your 3D scene components go here */}
 
 
-      {/* UI component */}
-      <ChatButton onClick={handleButtonClick} label="Chat" />
-      <CreateButton onClick={handleButtonClick} label="Create" />
-    </Canvas>
-  );
+    return (
+      <div className="flex justify-center items-center h-screen w-screen">
+        <BabyCanvas />
+      </div>
+  )
 };
 
 export default App;
