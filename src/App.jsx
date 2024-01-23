@@ -1,15 +1,16 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import BabyCanvas from './components/baby';
+import Baby from './components/Baby';
 import Appy from './components/Appy';
+
 
 const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/" element={<Baby />} />
       <Route path="/Appy" element={<Appy />} />
-        <Route path="/" component={BabyCanvas} />
       </Routes>
     </Router>
   );

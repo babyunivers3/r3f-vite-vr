@@ -3,14 +3,6 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 import * as THREE from 'three'; // Import the THREE object
 import { VRButton, XR } from '@react-three/xr';
 
-import { LookingGlassWebXRPolyfill, LookingGlassConfig } from '@lookingglass/webxr'
-
-const config = LookingGlassConfig
-config.targetY = 0
-config.targetZ = 0
-config.targetDiam = 3
-config.fovy = (40 * Math.PI) / 180
-new LookingGlassWebXRPolyfill()
 
 
 const BabylgCanvas = () => {

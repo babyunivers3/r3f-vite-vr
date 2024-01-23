@@ -4,7 +4,7 @@ import * as THREE from 'three'; // Import the THREE object
 import { VRButton, XR } from '@react-three/xr';
 
 
-const BabyCanvas = () => {
+const Baby = () => {
     const baby = useGLTF('./baby/babyy.gltf');
         // Assuming you have a texture in your GLTF model
         const texture = baby.scene.children[0].material.map;
@@ -31,4 +31,4 @@ const BabyCanvas = () => {
     );
   };
 
-export default BabyCanvas;
+export default Baby;
